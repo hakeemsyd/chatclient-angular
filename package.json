@@ -3,14 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "dependencies": {
-    "bower": "^1.7.9"
-  },
   "scripts": {
     "start": "./node_modules/bower/bin/bower install && gulp serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
+  "dependencies": {
+    "bower":"^1.7.9",
     "browser-sync": "^2.14.3",
     "gulp": "^3.9.1",
     "gulp-inject": "^4.1.0",
