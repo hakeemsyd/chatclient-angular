@@ -71,6 +71,7 @@ gulp.task('jade-watch', ['style', 'inject', 'js', 'lib', 'css', 'template'], bro
 gulp.task('serve', ['style', 'inject','js', 'lib', 'css', 'template'], function(){
   browserSync.init({
     ghostMode: false,
+    port: process.env.PORT || 3000,
     server:{
       baseDir: './dist'
     }
