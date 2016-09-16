@@ -6,7 +6,7 @@
   "dependencies": {},
   "scripts":{
     "postinstall":"gulp serve"
-  }
+  },
   "devDependencies": {
     "browser-sync": "^2.14.3",
     "gulp": "^3.9.1",
