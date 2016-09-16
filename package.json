@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {},
   "scripts": {
+    "start": "bower install && gulp serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
