@@ -4,8 +4,8 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {},
-  "scripts":{
-    "postinstall":"gulp serve"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "browser-sync": "^2.14.3",
@@ -17,10 +17,8 @@
     "jade": "^1.11.0",
     "jshint": "^2.9.3",
     "jshint-stylish": "^2.2.1",
+    "main-bower-files": "^2.13.1",
     "wiredep": "^4.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC"
