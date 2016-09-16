@@ -1,0 +1,13 @@
+div
+    chatArea
+      ul.messages
+        li.log
+          |Welcome to chatApp
+        li.message(ng-repeat="m in messages")
+          div(ng-if="m.type == 'message'")
+            span.username {{m.username}}
+            span.messageBody {{m.message}}
+          div(ng-if="m.type == 'log'")
+            span.log(style='display: list-item;') {{m.log}}
+      form(ng-submit="send()")
+        input.inputMessage(placeholder='Type here...', ng-model="textMessage")

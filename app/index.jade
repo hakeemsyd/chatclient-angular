@@ -1,0 +1,33 @@
+doctype html(xmlns='http://www.w3.org/1999/xhtml')
+head
+    meta(charset='utf-8')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    |     
+    meta(name='description', content='')
+    |     
+    meta(name='author', content='')
+    title ChatApp
+    script(src='bower_components/socket.io-client/socket.io.js')
+    //- bower:js
+    script(src='bower_components/angular/angular.js')
+    script(src='bower_components/angular-route/angular-route.js')
+    script(src='bower_components/ng-socket/ngSocket.js')
+    //- endbower
+
+    //- inject:js
+    script(src="app.js")
+    script(src="services/Client.js")
+    script(src="controllers/ChatController.js")
+    script(src="controllers/UsersController.js")
+    //- endinject
+    
+    //- inject:css
+    link(rel="stylesheet", href="assets/css/style.css")
+    //- endinject
+    
+    //- bower:css
+    //- endbower
+    
+body(ng-app="chatApp")
+  ng-view
