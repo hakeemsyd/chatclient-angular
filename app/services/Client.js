@@ -1,3 +1,4 @@
+// Test the clone of repo
 'use strict';
 chatApp.factory('Client',
   function($socket){
